@@ -1,8 +1,10 @@
-package main;
+package tests;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import main.Shape;
 
 public class ShapeTest {
 	@Test
