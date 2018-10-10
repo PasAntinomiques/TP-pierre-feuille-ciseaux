@@ -2,7 +2,7 @@ package strategies;
 
 import main.Shape;
 
-public class CisorsStrat implements Strategy {
+public class RandomStrat implements Strategy {
 
 	@Override
 	public Shape chooseShape() {
@@ -13,7 +13,7 @@ public class CisorsStrat implements Strategy {
 	@Override
 	public void rememberShape(Shape s) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
