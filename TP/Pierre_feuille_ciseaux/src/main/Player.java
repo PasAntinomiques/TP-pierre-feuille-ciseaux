@@ -5,7 +5,7 @@ public class Player {
 	private int nbPoints;
 	
 	public Player() {
-		
+		this.nbPoints = 0;
 	}
 	
 	public Shape play() {
@@ -16,7 +16,7 @@ public class Player {
 		this.nbPoints += i;
 	}
 	
-	public void getPoints() {
-		
+	public int getPoints() {
+		return this.nbPoints;
 	}
 }
