@@ -12,8 +12,8 @@ public class Player {
 		return new Shape();
 	}
 	
-	public void addPoints() {
-		
+	public void addPoints(int i) {
+		this.nbPoints += i;
 	}
 	
 	public void getPoints() {
