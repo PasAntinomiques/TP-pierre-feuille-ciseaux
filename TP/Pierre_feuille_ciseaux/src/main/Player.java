@@ -3,7 +3,6 @@ package main;
 public class Player {
 	
 	private int nbPoints;
-	private Strategy strategy;
 	
 	public Player() {
 		
