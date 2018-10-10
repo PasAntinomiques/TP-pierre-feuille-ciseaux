@@ -6,7 +6,7 @@ package main;
  */
 public enum Shape {
 
-	ROCK(1), PAPER(2), SCISSOR(3);
+	ROCK(1), PAPER(2), SCISSORS(3);
 	
 	private final int value;
 	private Shape(int value) {
@@ -29,7 +29,18 @@ public enum Shape {
 		default:
 			return 0;
 		}
-		
+	}
+	
+	
+	public static Shape fromInt(int i) {
+		switch(i) {
+		case 0 :
+			return ROCK;
+		case 1 :
+			return PAPER;
+		default :
+			return SCISSORS;
+		}
 	}
 
 }

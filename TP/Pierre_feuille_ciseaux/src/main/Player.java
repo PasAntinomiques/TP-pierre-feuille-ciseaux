@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Random;
+
 public class Player {
 	
 	private int nbPoints;
@@ -9,7 +11,9 @@ public class Player {
 	}
 	
 	public Shape play() {
-		return Shape.ROCK;
+		Random random = new Random();
+		int nbAlea = random.nextInt(3) + 1;
+		return Shape.fromInt(nbAlea);
 	}
 	
 	public void addPoints(int i) {
