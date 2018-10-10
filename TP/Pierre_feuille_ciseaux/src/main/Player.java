@@ -1,5 +1,7 @@
 package main;
 
+import strategies.Strategy;
+
 public class Player {
 	
 	private int nbPoints;
