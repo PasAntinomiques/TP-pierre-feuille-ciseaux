@@ -14,4 +14,5 @@ public class ShapeTest {
 		assertTrue(Shape.PAPER.compareShape(Shape.PAPER) == 0);
 		assertTrue(Shape.ROCK.compareShape(Shape.SCISSOR) > 0);
 	}
+	
 }
