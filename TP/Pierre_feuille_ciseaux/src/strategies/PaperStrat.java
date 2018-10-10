@@ -6,8 +6,7 @@ public class PaperStrat implements Strategy {
 
 	@Override
 	public Shape chooseShape() {
-		// TODO Auto-generated method stub
-		return null;
+		return Shape.PAPER;
 	}
 
 	@Override

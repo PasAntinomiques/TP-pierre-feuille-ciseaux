@@ -1,19 +1,21 @@
 package strategies;
 
+import java.util.Random;
+
 import main.Shape;
 
 public class RandomStrat implements Strategy {
 
 	@Override
 	public Shape chooseShape() {
-		// TODO Auto-generated method stub
-		return null;
+		Random random = new Random();
+		int nbAlea = random.nextInt(3) + 1;
+		return Shape.fromInt(nbAlea);
 	}
 
 	@Override
 	public void rememberShape(Shape s) {
-		// TODO Auto-generated method stub
-
+		// Don't do anything
 	}
 
 }

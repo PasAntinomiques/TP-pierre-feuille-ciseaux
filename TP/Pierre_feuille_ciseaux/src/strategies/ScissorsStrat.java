@@ -2,18 +2,17 @@ package strategies;
 
 import main.Shape;
 
-public class CisorsStrat implements Strategy {
+public class ScissorsStrat implements Strategy {
 
 	@Override
 	public Shape chooseShape() {
-		// TODO Auto-generated method stub
-		return null;
+		return Shape.SCISSORS;
 	}
 
 	@Override
 	public void rememberShape(Shape s) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

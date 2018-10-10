@@ -6,8 +6,7 @@ public class RockStrat implements Strategy {
 
 	@Override
 	public Shape chooseShape() {
-		// TODO Auto-generated method stub
-		return null;
+		return Shape.ROCK;
 	}
 
 	@Override
