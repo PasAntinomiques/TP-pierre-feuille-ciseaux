@@ -1,19 +1,22 @@
 package main;
 
 public class Game {
+	Player player1 = new Player();
+	Player player2 = new Player();
 	
 	public void playOneTurn() {
-		Player player1 = new Player();
-		Player player2 = new Player();
-		
 		Shape s1 = player1.play();
 		Shape s2 = player2.play();
-		if (s1.compareShape(s2)) {
-//			givePoints(cmd)
+		switch (s1.compareShape(s2)) {
+		case 1:
+			givePoints(player1, 1);
+		case -1:
+			givePoints(player2, 1);
+		default:
 		}
 	}
 	
-	public int givePoints(int cmp) {
-		return 0;
+	public void givePoints(Player player, int i) {
+		player.addPoints(i);;
 	}
 }

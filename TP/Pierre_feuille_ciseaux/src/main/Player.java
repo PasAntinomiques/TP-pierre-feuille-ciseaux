@@ -1,25 +1,28 @@
 package main;
 
+import java.util.Random;
+
 import strategies.Strategy;
 
 public class Player {
 	
 	private int nbPoints;
-	private Strategy strategy;
 	
 	public Player() {
-		
+		this.nbPoints = 0;
 	}
 	
 	public Shape play() {
-		return new Shape();
+		Random random = new Random();
+		int nbAlea = random.nextInt(3) + 1;
+		return Shape.fromInt(nbAlea);
 	}
 	
-	public void addPoints() {
-		
+	public void addPoints(int i) {
+		this.nbPoints += i;
 	}
 	
-	public void getPoints() {
-		
+	public int getPoints() {
+		return this.nbPoints;
 	}
 }
