@@ -1,8 +1,10 @@
-package main;
+package tests;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import main.Shape;
 
 public class ShapeTest {
 	@Test
@@ -12,4 +14,5 @@ public class ShapeTest {
 		assertTrue(Shape.PAPER.compareShape(Shape.PAPER) == 0);
 		assertTrue(Shape.ROCK.compareShape(Shape.SCISSOR) > 0);
 	}
+	
 }
