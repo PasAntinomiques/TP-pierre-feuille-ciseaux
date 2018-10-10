@@ -8,7 +8,7 @@ public class Game {
 		
 		Shape s1 = player1.play();
 		Shape s2 = player2.play();
-		if (s1.compareShape(s2)) {
+		if (s1.compareShape(s2) > 0) {
 //			givePoints(cmd)
 		}
 	}

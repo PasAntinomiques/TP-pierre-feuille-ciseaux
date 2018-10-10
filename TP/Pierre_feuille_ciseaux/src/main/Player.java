@@ -9,7 +9,7 @@ public class Player {
 	}
 	
 	public Shape play() {
-		return new Shape();
+		return Shape.ROCK;
 	}
 	
 	public void addPoints(int i) {
