@@ -24,4 +24,8 @@ public class Player {
 	public int getPoints() {
 		return this.nbPoints;
 	}
+	
+	public void changeStrategy(Strategy strategy) {
+		this.strat = strategy;
+	}
 }

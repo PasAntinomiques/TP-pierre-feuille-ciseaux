@@ -19,4 +19,12 @@ public class Game {
 	public void givePoints(Player player, int i) {
 		player.addPoints(i);;
 	}
+	
+	public Player getPlayer1() {
+		return this.player1;
+	}
+	
+	public Player getPlayer2() {
+		return this.player2;
+	}
 }
