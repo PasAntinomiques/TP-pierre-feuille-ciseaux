@@ -6,7 +6,7 @@ package main;
  */
 public enum Shape {
 
-	ROCK(1), PAPER(2), SCISSORS(3);
+	ROCK(3), PAPER(2), SCISSORS(1);
 	
 	private final int value;
 	private Shape(int value) {
@@ -21,7 +21,8 @@ public enum Shape {
 	 *         0 if this equals o
 	 */
 	public int compareShape(Shape o) {
-		switch ((o.value - this.value) % 3){
+		int res = Math.floorMod(o.value - this.value,3);
+		switch (res){
 		case 1:
 			return 1;
 		case 2:
