@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Game game = new Game();
 		game.getPlayer1().changeStrategy(new HumanStrat());;
-		game.getPlayer2().changeStrategy(new CopyLastStrat());;
+		game.getPlayer2().changeStrategy(new BeatLastStrat());;
 		for (int i = 0; i < 10; i++) {
 			game.playOneTurn();
 			System.out.println("Game number : " + i);

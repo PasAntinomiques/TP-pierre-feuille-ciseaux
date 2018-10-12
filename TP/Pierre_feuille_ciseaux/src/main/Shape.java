@@ -54,5 +54,10 @@ public enum Shape {
 		int nbAlea = random.nextInt(3) + 1;
 		return Shape.fromInt(nbAlea);
 	}
+	
+	public static Shape beatingShape(Shape s) {
+		int val = s.value - 1;
+		return Shape.fromInt((val == 0) ? 3 : val);
+	}
 
 }
