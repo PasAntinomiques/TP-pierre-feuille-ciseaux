@@ -35,12 +35,12 @@ public enum Shape {
 	
 	public static Shape fromInt(int i) {
 		switch(i) {
-		case 0 :
-			return ROCK;
 		case 1 :
+			return SCISSORS;
+		case 2 :
 			return PAPER;
 		default :
-			return SCISSORS;
+			return ROCK;
 		}
 	}
 
