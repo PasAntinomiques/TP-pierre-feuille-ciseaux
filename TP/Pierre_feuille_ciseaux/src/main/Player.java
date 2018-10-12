@@ -28,6 +28,10 @@ public class Player {
 	public void changeStrategy(Strategy strategy) {
 		this.strat = strategy;
 	}
+	
+	public void remember(Shape s) {
+		this.strat.rememberShape(s);
+	}
 
 	@Override
 	public String toString() {

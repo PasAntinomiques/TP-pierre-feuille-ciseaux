@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Random;
+
 /**
  * @author Quentin POSSAMAI
  *
@@ -32,6 +34,9 @@ public enum Shape {
 		}
 	}
 	
+	public int getValue() {
+		return this.value;
+	}
 	
 	public static Shape fromInt(int i) {
 		switch(i) {
@@ -42,6 +47,12 @@ public enum Shape {
 		default :
 			return ROCK;
 		}
+	}
+	
+	public static Shape randomShape() {
+		Random random = new Random();
+		int nbAlea = random.nextInt(3) + 1;
+		return Shape.fromInt(nbAlea);
 	}
 
 }
