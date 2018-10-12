@@ -28,4 +28,11 @@ public class Player {
 	public void changeStrategy(Strategy strategy) {
 		this.strat = strategy;
 	}
+
+	@Override
+	public String toString() {
+		return "Player ["+strat.getClass().getSimpleName() + "] nbPoints : " + nbPoints;
+	}
+	
+	
 }
