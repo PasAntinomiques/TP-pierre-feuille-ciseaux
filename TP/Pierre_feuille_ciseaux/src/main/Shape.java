@@ -34,10 +34,17 @@ public enum Shape {
 		}
 	}
 	
+	/**
+	 * @return The value of a shape
+	 */
 	public int getValue() {
 		return this.value;
 	}
 	
+	/**
+	 * @param i An integer generated with strategy
+	 * @return the shape associated
+	 */
 	public static Shape fromInt(int i) {
 		switch(i) {
 		case 1 :
@@ -49,12 +56,19 @@ public enum Shape {
 		}
 	}
 	
+	/**
+	 * @return the a random shape
+	 */
 	public static Shape randomShape() {
 		Random random = new Random();
 		int nbAlea = random.nextInt(3) + 1;
 		return Shape.fromInt(nbAlea);
 	}
 	
+	/**
+	 * @param s
+	 * @return the shape which beat the param shape
+	 */
 	public static Shape beatingShape(Shape s) {
 		int val = s.value - 1;
 		return Shape.fromInt((val == 0) ? 3 : val);
