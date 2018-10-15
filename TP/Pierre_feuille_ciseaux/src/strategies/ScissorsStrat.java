@@ -2,6 +2,10 @@ package strategies;
 
 import main.Shape;
 
+/**
+ * @author Jules
+ * Strat : always plays scissors 
+ */
 public class ScissorsStrat implements Strategy {
 
 	@Override

@@ -2,6 +2,10 @@ package strategies;
 
 import main.Shape;
 
+/**
+ * @author Jules
+ * Strat : always plays Rock
+ */
 public class RockStrat implements Strategy {
 
 	@Override

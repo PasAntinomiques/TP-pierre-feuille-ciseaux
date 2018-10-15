@@ -5,6 +5,10 @@ import java.io.IOException;
 import main.Shape;
 import util.Input;
 
+/**
+ * @author Jules
+ * Strat : prompts the user with the shape to play
+ */
 public class HumanStrat implements Strategy {
 
 	@Override
